@@ -10,7 +10,7 @@ if [[ ! -e /usr/local/bin/letsencrypt-auto ]]; then
 		git clone https://github.com/letsencrypt/letsencrypt.git
 	fi
 	chmod +x /usr/local/letsencrypt/letsencrypt-auto
-	ln -s /usr/local/letsencrypt/letsencrypt-auto /usr/local/bin/letsencrypt-auto
+	ln -sf /usr/local/letsencrypt/letsencrypt-auto /usr/local/bin/letsencrypt-auto
 fi
 
 # Set config path
